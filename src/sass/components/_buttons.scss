@@ -1,0 +1,30 @@
+.btn {
+    display: inline-block;
+    height: $btn-height;
+    font-size: $font-size-xlg;
+    font-weight: $font-weight-normal;
+    line-height: $btn-height;
+    color: $white;
+    text-align: center;
+    padding: 0 $btn-padding-horizontal;
+    border-radius: $btn-border-radius;
+    background-color: $grey-5;
+    border: 1px solid transparent;
+    cursor: pointer;
+  
+    &:hover,
+    &:active {
+      color: $white;
+      background-color: $grey-3;
+      outline: none;
+    }
+  
+    &.orange {
+      background-color: $orange;
+  
+      &:hover,
+      &:active {
+        background-color: $orange-light;
+      }
+    }
+}

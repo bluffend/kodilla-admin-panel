@@ -5,21 +5,27 @@
   "main": "index.js",
   "scripts": {
     "test": "npm-run-all test:*",
-    "test:html": "globstar nu-html-checker *.html",
+    "test:html": "globstar nu-html-checker src/*.html",
     "init-project": "npm install && npm-run-all init:*",
     "init:dirs": "mkdirp sass css vendor images js",
     "init:files": "touch README.md index.html sass/style.scss js/script.js",
     "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
     "build": "npm-run-all build:* test",
     "build:clean": "rimraf css/*",
-    "build:sass": "node-sass --output-style compact -o css sass",
-    "build:autoprefixer": "autoprefixer-cli css/style.css",
+    "build:sass": "node-sass --output-style compact -o src/css src/sass",
+    "build:autoprefixer": "autoprefixer-cli src/css/style.css",
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
     "watch": "npm-run-all build -p watch:*",
-    "watch:sassprefixer": "onchange -d 100 sass/style.css -- run-npm-all sassprefixer:*",
+    "watch:sassprefixer": "onchange -d 100 src/sass/style.scss -- run-npm-all sassprefixer:*",
     "sassprefixer:sass": "node-sass --output-style expanded --source-map true -o css sass",
-    "sassprefixer:autoprefixer": "autoprefixer-cli css/style.css",
-    "watch:browsersync": "browser-sync start --server --files 'css/*.css' '*.html' 'js/script.js' "
+    "sassprefixer:autoprefixer": "autoprefixer-cli src/css/style.css",
+    "watch:browsersync": "browser-sync start --server --files 'css/*.css' ' *.html' 'js/script.js' ",
+    
+    
+    "new:watch": "node-sass --watch --recursive --output src/css --source-map true --source-map-contents src/sass"
+  
+    
+  
   },
   "repository": {
     "type": "git",

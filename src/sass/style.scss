@@ -1,0 +1,22 @@
+@import "variables";
+@import "mixins";
+@import "normalize";
+@import "typography";
+@import "layout";
+
+//  dalszej części wraz z pojawianiem się kolejnych komponentów, sekcji oraz stron warto zastosować następującą kolejność */
+
+// Components //
+// @import "components/form_field"; */
+@import "components/buttons.scss";
+@import "components/headers.scss";
+@import "components/meter.scss";
+
+// Sections //
+// @import "section/registration_form"; */
+
+// Pages / Views //
+// @import "pages/registration"; */
+
+
+

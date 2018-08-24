@@ -1,0 +1,33 @@
+/* Fonts */
+$base-font-family: 'Roboto', sans-serif;
+
+$font-size-sm: 13px;
+$font-size-md: 14px; // basic font size
+$font-size-lg: 18px; // header
+$font-size-xlg: 20px; // buttons
+
+$font-weight-normal: 300;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+/* Colors */
+$black: #000; 
+$white: #fff;
+$grey-1: #f5f5f5; 
+$grey-2: #e3e3e3; 
+$grey-3: #bababa; 
+$grey-4: #a6a6a6; 
+$grey-5a: #979797; 
+$grey-5: #808080; 
+$grey-6: #333333; 
+$navyblue: #5385a8; 
+$orange: #c46009;
+$orange-light: #f1b141;
+
+/* margins */
+$header-paragraph-margin: 0.7em;
+
+/* Buttons */
+$btn-height: 2.3 * $font-size-lg;
+$btn-padding-horizontal: 12px;
+$btn-border-radius: 5px;

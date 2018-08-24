@@ -1,0 +1,43 @@
+body {
+    font-family: $base-font-family;
+    font-size: $font-size-md;
+    font-weight: $font-weight-normal;
+    color: $grey-6;
+    background-color: $grey-1;
+   }
+// fonts
+.font300 {
+    font-weight: $font-weight-normal;
+}
+.font500 {
+    font-weight: $font-weight-medium;
+}
+.font700 {
+    font-weight: $font-weight-bold;
+  }
+
+// links
+a {
+    color: $navyblue;
+    font-weight: $font-weight-normal;
+    text-decoration: none;
+  
+    &:hover {
+      color: $orange-light;
+    }
+  
+    &.large {
+      font-size: $font-size-lg;
+    }
+  
+    &.small {
+      font-size: $font-size-sm;
+    }
+  } 
+
+// paragraph
+p {
+  margin: $header-paragraph-margin 0;
+  line-height: 1.3;
+ }
+
