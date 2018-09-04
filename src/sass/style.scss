@@ -8,9 +8,16 @@
 
 // Components //
 // @import "components/form_field"; */
-@import "components/buttons.scss";
-@import "components/headers.scss";
-@import "components/meter.scss";
+@import "components/buttons";
+@import "components/headers";
+@import "components/meter";
+@import "components/time-picker";
+@import "components/icons";
+@import "components/graph";
+
+// .icon-arrow-down {
+//    background: url("components/icon-fonts/arrow-down.svg");
+// }
 
 // Sections //
 // @import "section/registration_form"; */

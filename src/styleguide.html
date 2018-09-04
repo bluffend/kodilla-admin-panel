@@ -18,12 +18,13 @@
   <h3>header 3 </h3>
   <h4>header 4 </h4>
   <h5>header 5 </h5>
-  <h6>header 6</h6>
+  <h6>header 6 </h6>
   <p>
     <strong> paragraph</strong> Lorem ipsum dolor sit amet, consectetur
     <strong>adipiscing elit</strong>. Maecenas blandit diam urna, eu
-    <a href="#">dignissim</a> ex dignissim consequat.<br> Duis porta lectus lorem, quis eleifend justo scelerisque eget. Duis ac sem et turpis
-    tincidunt molestie in non ipsum. Maecenas ut augue erat. </p>
+    <a href="#">dignissim</a> ex dignissim consequat.
+    <br> Duis porta lectus lorem, quis eleifend justo scelerisque eget. Duis ac sem et turpis tincidunt molestie in non ipsum.
+    Maecenas ut augue erat. </p>
   <a href="#">link a - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
   <ul>
     <li>Lorem ipsum dolor, consectetur
@@ -54,46 +55,159 @@
 
   <!-- Links -->
   <hr>
-  <a href="#!">Regular / standard link</a><br>
-  <a href="#!" class="large">Large link</a><br>
+  <a href="#!">Regular / standard link</a>
+  <br>
+  <a href="#!" class="large">Large link</a>
+  <br>
   <a href="#!" class="small">Small link</a>
 
   <!-- Headers -->
   <hr>
   <h1 class="section-info-header">Section info header</h1>
   <h2 class="chart-header">Chart header for "Earnings chart"</h2>
-    
+
   <!-- Buttons -->
   <hr>
   <button class="btn">Button</button>
   <button class="btn orange">Orange button</button>
 
-  <!-- Meter -->
+  <!-- Icons -->
   <hr>
-  <div class="meters-container">
-    <div class="meter-wrapper">
-      <span class="meter-label">Visit Signups</span>
-      <span class="meter-value">124</span>
+  <h3>Icons</h3>
+  <i class="icon-calendar"></i>
+  <i class="icon-refresh"></i>
+  <i class="icon-arrow-down"></i>
+  <i class="icon-wallet"></i>
+  <i class="icon-quit"></i>
+
+  <!-- Date picker -->
+  <hr>
+  <form id="time-picker" class="time-picker-container">
+    <!-- u-hv-center -->
+    <div class="time-picker-wrapper">
+      <!-- general__period-picker-wrapper -->
+      <input type="date" id="period-start" name="period-start" value="">
+      <input type="date" id="period-end" name="period-end" value="">
+      <a href="#!">
+        <i class="icon-calendar"></i>
+      </a>
     </div>
-    <div class="meter-wrapper">
-      <span class="meter-label">Net Deposit</span>
-      <span class="meter-value">564</span>
+
+    <button class="btn orange" type="submit">
+      <i class="icon-refresh"></i>
+    </button>
+  </form>
+
+
+  <!-- Gotowy element - Meter section -->
+  <hr>
+  <p>gotowy element</p>
+  <div class="row">
+    <div class="col-offset-lg-3 col-lg-3 col-md-12 col-sm-12">
+      <div class="meters-container-new">
+        <div class="meter-wrapper">
+          <span class="meter-label">Visit Signups</span>
+          <span class="meter-value">124</span>
+        </div>
+      </div>
     </div>
-    <div class="meter-wrapper">
-      <span class="meter-label">FTD</span>
-      <span class="meter-value">445</span>
+    <div class="col-lg-3 col-md-12 col-sm-12">
+      <div class="meters-container-new">
+        <div class="meter-wrapper">
+          <span class="meter-label">Net Deposit</span>
+          <span class="meter-value">564</span>
+        </div>
+      </div>
     </div>
-    <div class="meter-wrapper">
-      <span class="meter-label">Turnover</span>
-      <span class="meter-value">432</span>
+    <div class="col-offset-lg-3 col-lg-3 col-md-12 col-sm-12">
+      <div class="meters-container-new">
+        <div class="meter-wrapper">
+          <span class="meter-label">FTD</span>
+          <span class="meter-value">445</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-12 col-sm-12">
+      <div class="meters-container-new">
+        <div class="meter-wrapper">
+          <span class="meter-label">Turnover</span>
+          <span class="meter-value">432</span>
+        </div>
+      </div>
     </div>
   </div>
 
+
+  <!-- Graph -->
+  <hr>
+  <p>Grafika - wykres </p>
+  <div class="container">
+    <div class="chart">
+      <h2 class="chart-header">Earnings chart</h2>
+      <div class="scroll-wrapper">
+        <img src="../images/chart.png" alt="">
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <!-- Meter section 2 - do testowania -->
+  <hr>
+  <p>testy</p>
+  <div class="row">
+    <div class="meters-container">
+      <div class="meter-wrapper">
+        <span class="meter-label">Visit Signups</span>
+        <span class="meter-value">124</span>
+      </div>
+      <div class="meter-wrapper">
+        <span class="meter-label">Net Deposit</span>
+        <span class="meter-value">564</span>
+      </div>
+
+      <div class="meter-wrapper">
+        <span class="meter-label">FTD</span>
+        <span class="meter-value">445</span>
+      </div>
+      <div class="meter-wrapper">
+        <span class="meter-label">Turnover</span>
+        <span class="meter-value">432</span>
+      </div>
+    </div>
+  </div>
 
   <!-- Card -->
   <hr>
 
   <!-- Grid -->
+  <hr>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        offset
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <p>col-</p>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <p>col-</p>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <p>col-</p>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <p>col-</p>
+      </div>
+
+
+    </div>
+  </div>
 
 
 </body>

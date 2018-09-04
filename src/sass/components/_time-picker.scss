@@ -1,0 +1,23 @@
+.time-picker-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time-picker-wrapper {
+    border: 1px solid $grey-2;
+    border-radius: $btn-border-radius;
+    height: 44px;
+    padding: 6px 12px;
+    margin-right: 18px;
+    display: flex;
+    align-items: center;
+    
+    /* & input:first-child:after {
+      content: '';
+      margin: 0 6px;
+      width: 1px;
+      height: 32px;
+      background-color: $grey-2;
+    }*/
+}

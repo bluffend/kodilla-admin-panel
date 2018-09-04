@@ -1,11 +1,22 @@
 .meters-container {
-    width: 700px;
+    max-width: 700px;  
+  //width: 700px;
     height: 6 * $font-size-lg;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
+    
+}
+
+.meters-container-new {
+  max-width: 400px;
+  height: 3 * $font-size-lg;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .meter-wrapper {
