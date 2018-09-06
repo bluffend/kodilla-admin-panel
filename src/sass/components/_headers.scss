@@ -3,13 +3,13 @@
 h1, h2, h3, h4, h5, h6 {
   margin: $header-paragraph-margin 0;
 }
-.section-info-header, .chart-header {
+.board-info-header, .chart-header {
   font-size: $font-size-lg;
   font-weight: $font-weight-bold;
   margin: $font-size-lg 0;
   color: $grey-5;
 }
-.section-info-header {
+.board-info-header {
   text-transform: uppercase;
 }
 

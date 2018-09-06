@@ -24,10 +24,15 @@ $navyblue: #5385a8;
 $orange: #c46009;
 $orange-light: #f1b141;
 
-/* margins */
+/* margins and padding */
 $header-paragraph-margin: 0.7em;
+$board-container-margin: 20px;
+$table-links-margins: 24px;
+$table-links-tr-padding: 15px;
+$board-info-header-padding: 15px 0 15px 10px;
+$board-info-header-margin: 18px 0;
 
 /* Buttons */
 $btn-height: 2.3 * $font-size-lg;
-$btn-padding-horizontal: 12px;
+$btn-padding-horizontal:20px;
 $btn-border-radius: 5px;

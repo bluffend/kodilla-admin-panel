@@ -1,0 +1,51 @@
+.links-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: $font-size-lg;
+    margin-bottom: $table-links-margins;
+    margin-top: $table-links-margins;
+}
+
+table {
+    max-width: 670px;
+    & tr {
+      transition: background-color 0.3s ease;
+    }
+    & td {
+      padding-left: 1.5em;
+      border-top:1px solid $grey-4;
+    }
+    & tr:nth-last-child(1) {
+        border-bottom:1px solid $grey-4;
+      }
+    & tr:hover .table-action-link {
+        visibility: visible;    
+    }
+    & tr:hover {
+        background-color: $grey-2;
+    }
+}
+
+td {
+    padding: $table-links-tr-padding;
+}
+
+.link-header {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-bold;
+  color: $grey-4;
+}
+.td-action-link {
+   text-align: right;
+
+}
+.table-action-link {
+    margin: 0.5em;
+    visibility: hidden;
+    &:nth-last-child(1){
+        color:red;
+    }
+}
+

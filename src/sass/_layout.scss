@@ -1,14 +1,10 @@
-* {
-    box-sizing: border-box;
-  }
-  
+// klasy pomocnicze  
   .container {
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-    border: 2px solid orange;
   }
   
   .container-fluid {
@@ -16,11 +12,58 @@
     padding-left: 15px;
     padding-right: 15px;
   }
-  .row {
+  // koniec klas pomocniczych
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .board-container {
+    max-width: 100%;
+    background-color: $white;
+    box-shadow: 3px -3px 8px $grey-2;
+    margin: $board-container-margin;
+    // border: 1px solid darkslategrey; 
+  }
+  .board-info-header {
+      width: 100%;
+      padding: $board-info-header-padding;
+      margin: $board-info-header-margin;
+      border-bottom:1px solid $grey-4;
+      //border: 1px solid orange;
+  }
+  
+  .board-content {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: $board-content-padding;
+    display: flex;
+    flex-direction: column;
+    //justify-content: center;
+    align-items: center;
+    // border: 2px solid blue;
+  }
+
+  .container-800 {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    //justify-content: center;
+    align-items: center;
+    // border: 2px solid brown;
+  }
+
+  
+// grid definition 
+  
+.row {
     display: flex;
     flex-wrap: wrap;
   }
-  
+ 
   @mixin grid($prefix) {
     @for $i from 1 through 12 {
       .col-#{$prefix}-#{$i} {
@@ -36,6 +79,7 @@
       }
     }
   }
+
 
   @media(max-width: 767px) {
     @include grid('sm');
