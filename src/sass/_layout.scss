@@ -23,14 +23,12 @@
     background-color: $white;
     box-shadow: 3px -3px 8px $grey-2;
     margin: $board-container-margin;
-    // border: 1px solid darkslategrey; 
   }
   .board-info-header {
       width: 100%;
       padding: $board-info-header-padding;
       margin: $board-info-header-margin;
       border-bottom:1px solid $grey-4;
-      //border: 1px solid orange;
   }
   
   .board-content {
@@ -40,9 +38,14 @@
     padding: $board-content-padding;
     display: flex;
     flex-direction: column;
-    //justify-content: center;
     align-items: center;
-    // border: 2px solid blue;
+  }
+
+  .board-content-time-picker {
+    width: 100%;
+    padding: $board-content-time-picker-padding;
+    margin: $board-info-header-margin;
+    border-bottom:1px solid $grey-4;
   }
 
   .container-800 {
@@ -51,9 +54,7 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    //justify-content: center;
     align-items: center;
-    // border: 2px solid brown;
   }
 
   

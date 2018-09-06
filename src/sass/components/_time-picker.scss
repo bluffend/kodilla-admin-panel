@@ -10,8 +10,15 @@
     height: 44px;
     padding: 6px 12px;
     margin-right: 18px;
-    display: flex;
+    display: flex-wrap;
     align-items: center;
+    & input {
+      border: none;
+      padding:5px 0px 5px 10px;
+    }
+    & input:nth-child(2) {
+      border-left: 1px solid $grey-2;
+    }
     
     /* & input:first-child:after {
       content: '';
@@ -19,5 +26,19 @@
       width: 1px;
       height: 32px;
       background-color: $grey-2;
-    }*/
+    } */
+}
+.icon-calendar-style {
+  padding-left: 12px;
+  border-left: 1px solid $grey-2; 
+}
+
+@media(max-width: 767px) {
+  .time-picker-wrapper {
+    flex-direction: column;
+    border: 1px solid red;
+  }
+  .time-picker-container {
+    flex-direction: column;
+  }
 }
